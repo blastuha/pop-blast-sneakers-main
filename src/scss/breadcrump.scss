@@ -1,0 +1,28 @@
+.breadcrumb {
+  margin-bottom: 30px;
+
+  &__item {
+    display: inline-block;
+    font-family: Jura;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 1.5em;
+    text-decoration: none;
+
+    &:not(:last-child)::after {
+      color: #999999;
+      content: '/';
+      margin: 0.8rem;
+    }
+
+    &-link {
+      display: inline-block;
+      color: inherit;
+    }
+  }
+}
+
+.low-margin {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,44 @@
+.result {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-height: 290px;
+  background-color: rgb(236, 236, 255);
+  top: 40px;
+  z-index: 9999;
+  overflow: scroll;
+
+  .result__link {
+    display: block;
+    padding: 10px 20px;
+    margin: 0;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.result[bottomsearch='true'] {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 62px;
+  z-index: 9999;
+  overflow: scroll;
+  max-height: 100vh;
+  height: 100vh;
+
+  .result__link {
+    font-family: Jura;
+    color: inherit;
+    &:link,
+    &:visited {
+      color: #333333;
+    }
+  }
+}

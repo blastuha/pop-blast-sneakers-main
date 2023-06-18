@@ -1,0 +1,23 @@
+.person {
+  @media (max-width: 767px) {
+    display: flex;
+    height: calc(100vh - 120px);
+  }
+
+  &__container {
+    width: calc(100vw - 100px);
+    max-width: 1480px;
+    margin: 50px auto 0 auto;
+  }
+
+  &__header {
+    margin-bottom: 30px;
+  }
+}
+
+.person-title {
+  font-family: Jura;
+  font-size: 22px;
+  color: #333333;
+  line-height: 1.18em;
+}

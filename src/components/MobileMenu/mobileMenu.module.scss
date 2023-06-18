@@ -1,0 +1,132 @@
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  font-family: Jura;
+  transform: translate3d(-100%, 0, 0);
+  transition: all 0.5s;
+  z-index: 99999999999;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.menu.active {
+  transform: translate3d(0, 0, 0);
+  transition: all 0.5s;
+}
+
+.close__section {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px 0 20px;
+  background-color: #ededed;
+
+  svg {
+    width: 26px;
+    height: 26px;
+    align-self: center;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(143, 145, 209);
+      scale: (120%);
+    }
+  }
+}
+
+.icons__section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+
+  a {
+    margin-right: 12px;
+    color: #333333;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: auto;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      color: rgb(143, 145, 209);
+      scale: (110%);
+    }
+  }
+
+  .section__controls {
+    display: flex;
+    padding: 20px;
+  }
+
+  .section__search {
+    padding: 20px;
+  }
+}
+
+.menu__content {
+  width: 100%;
+  padding: 0 20px 0 20px;
+  position: relative;
+
+  &::after {
+    content: '';
+    padding-top: 30px;
+    position: absolute;
+    top: 100%;
+    width: calc(100% - 40px);
+    height: 3px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+  }
+}
+
+.menu__header {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.5em;
+  padding: 30px 0 10px 0;
+}
+
+.menu__list {
+  a {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.5em;
+    letter-spacing: 0em;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      color: rgb(143, 145, 209);
+    }
+  }
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+.searchClosing {
+  padding: 20px 20px 20px 0;
+
+  svg {
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(143, 145, 209);
+      scale: (120%);
+    }
+  }
+}

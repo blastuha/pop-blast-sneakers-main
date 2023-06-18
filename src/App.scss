@@ -1,0 +1,53 @@
+@import './scss/all';
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap');
+
+/* Обнуление */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+// body:has(.menu.open) {
+//   overflow: hidden;
+// }
+
+.wrapper {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.noscroll {
+  overflow: hidden;
+}
